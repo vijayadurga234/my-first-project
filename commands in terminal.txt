@@ -1,0 +1,105 @@
+git init
+git add .
+git commit -m "First commit"
+git remote add origin https://github.com/username/repo-name.git
+git branch -M main
+git push -u origin main
+
+
+git checkout main
+// To sitch from one branch to other branch on same repository
+
+git add .
+git commit -m "first commit(commit message)"
+git push
+
+// To commit changes in VS code and push changes to github
+
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git init
+Initialized empty Git repository in C:/Users/VIJAYA DURGA/Documents/Githunb copilot/.git/
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git add .
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git commit -m "first commit"
+[main (root-commit) 5ebd330] first commit
+ 2 files changed, 12 insertions(+)
+ create mode 100644 Factorial of no.py
+ create mode 100644 Test1.py
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git remote add origin https://github.com/vijayadurga234/my-first-project.git
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git branch -M main
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 468 bytes | 468.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vijayadurga234/my-first-project.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git checkout childbranch
+error: pathspec 'childbranch' did not match any file(s) known to git
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git fetch
+From https://github.com/vijayadurga234/my-first-project
+ * [new branch]      childbranch -> origin/childbranch
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git checkout childbranch
+M       Test1.py
+branch 'childbranch' set up to track 'origin/childbranch'.
+Switched to a new branch 'childbranch'
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git add .                           
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git commit -m " commit"
+[childbranch ee5a9a3]  commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vijayadurga234/my-first-project.git
+   5ebd330..ee5a9a3  childbranch -> childbranch
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git add .
+local object.
+To https://github.com/vijayadurga234/my-first-project.git
+   ee5a9a3..726f62e  childbranch -> childbranch
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git remote add origin https://github.com/vijayadurga234/test.git
+error: remote origin already exists.
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git remote add origin https://github.com/vijayadurga234/test3.git
+error: remote origin already exists.
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git add .
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git commit
+On branch childbranch
+Your branch is up to date with 'origin/childbranch'.
+
+nothing to commit, working tree clean
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git fetch
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git add .
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git commit
+Aborting commit due to empty commit message.
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> 
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git commit -m "commiting"
+[main 9fa1cc5] commiting
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vijayadurga234/my-first-project.git
+   5ebd330..9fa1cc5  main -> main
+PS C:\Users\VIJAYA DURGA\Documents\Githunb copilot> 
